@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="למדו האקינג איתי עם המדריך G! מדריכים מקצועיים להגנה מפני פישינג ולשליטה בסייבר.">
+    <meta name="keywords" content="האקינג איתי, סייבר, פישינג, מדריכי האקינג, המדריך G, הגנה על מידע">
+    <meta name="author" content="המדריך G">
+    <title>האקינג עם המדריך G</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c0b2b;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #800080, #4b0082);
+            padding: 30px;
+            color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #000000;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #d8bfd8;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffffff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .guide {
+            background-color: #2e1b47;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #d8bfd8;
+            font-size: 1.8em;
+        }
+        .about, .guides, .contact {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #d8bfd8;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #800080;
+            border-radius: 5px;
+            background-color: #2e1b47;
+            color: #ffffff;
+        }
+        form button {
+            background-color: #800080;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #4b0082;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ברוכים הבאים לאתר ההאקינג של המדריך G!</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">בית</a>
+        <a href="#" onclick="showSection('guides')">מדריכים</a>
+        <a href="#" onclick="showSection('about')">עלינו</a>
+        <a href="#" onclick="showSection('contact')">צור קשר</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="active">
+            <h2>ברוך הבא, האקר!</h2>
+            <p>ברוכים הבאים לאתר הכי מגניב להאקינג איתי! כאן תלמדו איך לשלוט בעולם הסייבר עם מדריכים, טיפים, וסודות מהמדריך G.</p>
+        </div>
+        <div id="guides" class="guides">
+            <h2>מדריכים להאקינג איתי</h2>
+            <div class="guide">
+                <h3>מדריך 1: סריקת רשתות Wi-Fi</h3>
+                <p>גלו איך להשתמש ב-Wireshark או Nmap כדי למצוא רשתות Wi-Fi בצורה חוקית ובטוחה.</p>
+            </div>
+            <div class="guide">
+                <h3>מדריך 2: הגנה מפני פישינג</h3>
+                <p>למדו לזהות קישורים זדוניים, להימנע ממתקפות פישינג, ולהגן על המידע שלכם.</p>
+            </div>
+            <div class="guide">
+                <h3>מדריך 3: יסודות קידוד סיסמאות</h3>
+                <p>טיפים לבחירת סיסמאות חזקות ושימוש במנהלי סיסמאות כמו LastPass או Bitwarden.</p>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <h2>עלינו</h2>
+            <p>אנחנו כאן לעזור לכם לשלוט בעולם הסייבר, להדריך אתכם צעד-צעד, ולהגן עליכם מפני פישינג ומתקפות אחרות! הצטרפו לקהילה של המדריך G ותהפכו למקצועני סייבר תוך זמן קצר.</p>
+        </div>
+        <div id="contact" class="contact">
+            <h2>צור קשר</h2>
+            <p>רוצים לשאול משהו או לקבל עזרה? שלחו הודעה למדריך G!</p>
+            <form action="https://formspree.io/f/xvgazvgz" method="POST">
+                <label for="name">שם:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">מייל:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">הודעה:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="hidden" name="_to" value="NTNLBRGL0@GMAIL.COM">
+                <button type="submit">שלח</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container > div').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
